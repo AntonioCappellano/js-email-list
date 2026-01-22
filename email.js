@@ -5,5 +5,9 @@ for (let i = 0; i < 10; i++) {
     .then((response) => {
       const generateEmails = response.data.response;
       console.log(generateEmails);
+
+      const liEmail = document.createElement("li");
+      liEmail.textContent = generateEmails;
+      listEmail.appendChild(liEmail);
     });
 }
